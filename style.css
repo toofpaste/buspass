@@ -55,3 +55,23 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 }
+#cover2{
+    z-index: 1;
+    background-color: white;
+    position: absolute;
+    width: 33vw;
+    height: 13vh;
+    top: 90%;
+    left: 82%;
+    transform: translate(-50%, -50%);
+}
+#qr{
+    z-index: 2;
+    background-color: white;
+    position: absolute;
+    width: 20vw;
+    height: 10vh;
+    top: 89.5%;
+    left: 89.345%;
+    transform: translate(-50%, -50%);
+}
