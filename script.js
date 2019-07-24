@@ -7,14 +7,17 @@ $(document).ready(function() {
     var monthName = ['Jan', 'Feb', 'Mar', 'Apr','May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     var day = dt.getDate();
     var year = dt.getFullYear();
-    if(min > 15){
+    if(min > 25){
         min -= 15;
-    }else if(min > 5){
+    }else if(min > 15){
         min -= 5;
+    }else if(min < 10) {
+        min -= 3;
+        min = "0" + min;
     }else {
-        hours--;
-        min = 43;
-    }
+            hours--;
+            min = 43;
+        }
     if(hours > 10){
         time = ((hours - 10) + 0) + ":" + min + " PM";
     }else if(hours === 10){

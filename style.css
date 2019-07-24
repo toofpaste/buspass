@@ -49,9 +49,9 @@ body{
     z-index: 1;
     background-color: black;
     width: 100vw;
-    height: 7%;
+    height: 15%;
     position: absolute;
-    top: 18.5%;
+    top: 22.5%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
