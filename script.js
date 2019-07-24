@@ -16,9 +16,9 @@ $(document).ready(function() {
         min = 43;
     }
     if(hours > 10){
-        time = ((hours - 12) + 2) + ":" + min + " PM";
+        time = ((hours - 10) + 0) + ":" + min + " PM";
     }else if(hours === 10){
-        time = ((hours - 12) + 2) + ":" + min + " PM";
+        time = ((hours - 10) + 12) + ":" + min + " PM";
     }else time = (hours + 2) + ":" + min + " AM";
 
     var fullTime = monthName[dt.getMonth()] + " " + day + ", " + year + " " + time;
