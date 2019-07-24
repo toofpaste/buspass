@@ -3,6 +3,7 @@ $(document).ready(function() {
     var time = dt.getHours() + ":" + dt.getMinutes();
     var min = dt.getMinutes();
     var hours = dt.getHours();
+    console.log(dt.getMinutes())
     var month = dt.getMonth() + 1;
     var monthName = ['Jan', 'Feb', 'Mar', 'Apr','May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     var day = dt.getDate();
@@ -12,7 +13,6 @@ $(document).ready(function() {
     }else if(min > 15){
         min -= 5;
     }else if(min < 10) {
-        min -= 3;
         min = "0" + min;
     }else {
             hours--;
